@@ -10,4 +10,15 @@
     <color name="secondaryText">#757575</color>
     <color name="dividerColor">#BDBDBD</color>
     <color name="white">#FFFFFF</color>
+
+    <!-- 90% Opaque Colors -->
+    <color name="transparentColorPrimary">#E6607D8B</color>
+    <color name="transparentColorPrimaryDark">#E6455A64</color>
+    <color name="transparentLightPrimary">#E6CFD8DC</color>
+    <color name="transparentColorAccent">#E69E9E9E</color>
+    <color name="transparentPrimaryText">#E6212121</color>
+    <color name="transparentSecondaryText">#E6757575</color>
+    <color name="transparentDividerColor">#E6BDBDBD</color>
+    <color name="transparentWhite">#E6FFFFFF</color>
+
 </resources>

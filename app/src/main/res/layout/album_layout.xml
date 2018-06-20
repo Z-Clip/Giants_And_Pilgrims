@@ -20,6 +20,7 @@
     <!-- Album List -->
     <ListView
         android:id="@+id/album_list"
+        android:layout_centerInParent="true"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/header_view"

@@ -10,11 +10,15 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    String[] albumTitles;
-    int[] albumYears;
-    String[] albumCoverResourceNames;
-    int[] albumCoverResourceIDs;
-    ArrayList<AlbumInfo> albumInfo = new ArrayList<>();
+    public String[] albumTitles;
+    public int[] albumYears;
+    public String[] albumCoverResourceNames;
+    public int[] albumCoverResourceIDs;
+    public ArrayList<AlbumInfo> albumInfo = new ArrayList<>();
+    public RelativeLayout bellwether;
+    public RelativeLayout joyousMysteries;
+    public RelativeLayout becoming;
+    public RelativeLayout almanac;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -2,10 +2,10 @@
 <resources>
 
     <string-array name="album_cover_names">
-        <item>bellwether</item>
-        <item>the_joyous_mysteries</item>
-        <item>becoming</item>
-        <item>almanac</item>
+        <item>bellwether_cover</item>
+        <item>the_joyous_mysteries_cover</item>
+        <item>becoming_cover</item>
+        <item>almanac_cover</item>
     </string-array>
 
     <string-array name="album_titles">
@@ -14,5 +14,12 @@
         <item>Becoming</item>
         <item>Almanac</item>
     </string-array>
+
+    <integer-array name="album_year">
+        <item>2018</item>  <!-- Bellwether -->
+        <item>2017</item>  <!-- The Joyous Mysteries -->
+        <item>2015</item>  <!-- Becoming -->
+        <item>2014</item>  <!-- Almanac -->
+    </integer-array>
 
 </resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="album_cover_names">
+        <item>bellwether</item>
+        <item>the_joyous_mysteries</item>
+        <item>becoming</item>
+        <item>almanac</item>
+    </string-array>
+
+    <string-array name="album_titles">
+        <item>Bellwether</item>
+        <item>The Joyous Mysteries</item>
+        <item>Becoming</item>
+        <item>Almanac</item>
+    </string-array>
+
+</resources>

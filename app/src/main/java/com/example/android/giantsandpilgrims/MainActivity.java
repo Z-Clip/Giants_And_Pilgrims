@@ -4,7 +4,6 @@ import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
 
 import java.util.ArrayList;
 
@@ -15,15 +14,11 @@ public class MainActivity extends AppCompatActivity {
     public String[] albumCoverResourceNames;
     public int[] albumCoverResourceIDs;
     public ArrayList<AlbumInfo> albumInfo = new ArrayList<>();
-    public RelativeLayout bellwether;
-    public RelativeLayout joyousMysteries;
-    public RelativeLayout becoming;
-    public RelativeLayout almanac;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.album_layout);
+        setContentView(R.layout.initial_layout);
 
         createArrays();
 

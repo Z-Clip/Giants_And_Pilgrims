@@ -1,6 +1,7 @@
 package com.example.android.giantsandpilgrims;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -30,9 +31,6 @@ public class AlbumArrayAdapter extends ArrayAdapter {
                     R.layout.album_info, parent, false);
         }
 
-        RelativeLayout albumInfoViewGroup = listItemView.findViewById(R.id.album_info_view_group);
-        albumInfoViewGroup.setTag(currentAlbum.getAlbumName() + "view_group");
-
         ImageView albumCoverArt = listItemView.findViewById(R.id.album_cover_image);
         albumCoverArt.setImageResource(currentAlbum.getCoverDrawableID());
 
@@ -41,6 +39,16 @@ public class AlbumArrayAdapter extends ArrayAdapter {
 
         TextView albumYear = listItemView.findViewById(R.id.album_year);
         albumYear.setText(String.valueOf(currentAlbum.getAlbumYear()));
+
+        listItemView.setTag(position);
+        listItemView.setOnClickListener((new View.OnClickListener() {
+            // The code in this method will be executed when the family category is clicked on.
+            @Override
+            public void onClick(View view) {
+                Intent songListIntent = new Intent(getContext(), SongList.class);
+                getContext().startActivity(songListIntent);
+            }
+        }));
 
         return listItemView;
     }

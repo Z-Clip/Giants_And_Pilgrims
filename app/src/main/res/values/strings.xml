@@ -2,4 +2,5 @@
     <string name="app_name">GIANTS &amp; PILGRIMS</string>
     <string name="background_image">Background Image</string>
     <string name="song_list">Song List</string>
+    <string name="back">Back To Albums</string>
 </resources>

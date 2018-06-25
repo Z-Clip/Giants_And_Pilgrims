@@ -1,8 +1,11 @@
 package com.example.android.giantsandpilgrims;
 
+import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -11,6 +14,7 @@ public class SongList extends AppCompatActivity {
     String albumName;
     ImageView backgroundImage;
     TextView header;
+    TextView backView;
 
 
     @Override
@@ -24,11 +28,20 @@ public class SongList extends AppCompatActivity {
 
         getViewObjectIDs();
         setViews();
+
+        backView.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent songListIntent = new Intent(SongList.this, MainActivity.class);
+                startActivity(songListIntent);
+            }
+        }));
     }
 
     public void getViewObjectIDs() {
         backgroundImage = findViewById(R.id.background_image);
         header = findViewById(R.id.header_view);
+        backView = findViewById(R.id.back_button);
     }
 
     public void setViews() {

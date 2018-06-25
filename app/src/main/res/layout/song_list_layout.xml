@@ -11,9 +11,17 @@
         style="@style/background_image"
         tools:src="@drawable/bellwether_full"/>
 
+    <!-- Header -->
     <TextView
         android:id="@+id/header_view"
         style="@style/header_text_view"
-        android:text="Success"/>
+        tools:text="Success"/>
+
+    <!-- Back -->
+    <TextView
+        android:id="@+id/back_button"
+        style="@style/header_text_view"
+        android:layout_alignParentBottom="true"
+        android:text="@string/back"/>
 
 </RelativeLayout>

@@ -18,7 +18,7 @@
         <item>Cathedrals EP</item>
         <item>Haystacks: A Collection of Favorite Songs</item>
         <item>Becoming</item>
-        <item>Almanac</item>
+        <item>Almanac No.1</item>
     </string-array>
 
     <integer-array name="album_year">
@@ -30,5 +30,179 @@
         <item>2015</item>  <!-- Becoming -->
         <item>2014</item>  <!-- Almanac -->
     </integer-array>
+    
+    <string-array name="bellwether_song_title_array">
+        <item>Settled Down</item>
+        <item>Guide Your Wild Eyes Down</item>
+        <item>Empty</item>
+        <item>Dark Fields</item>
+        <item>First Kiss</item>
+        <item>Melchizadek</item>
+        <item>There Is A Balm In Gilead</item>
+        <item>Everything Gets Better</item>
+        <item>Hymn No.36 (Praise To The Lord The Almighty)</item>
+        <item>David and I</item>
+    </string-array>
+    
+    <string-array name="bellwether_song_length_array">
+        <item>04:27</item> <!-- Settled Down -->
+        <item>03:05</item> <!-- Guide Your Wild Eyes Down -->
+        <item>04:12</item> <!-- Empty -->
+        <item>04:54</item> <!-- Dark Fields -->
+        <item>03:29</item> <!-- First Kiss -->
+        <item>02:55</item> <!-- Melchizadek -->
+        <item>03:17</item> <!-- There Is A Balm In Gilead -->
+        <item>03:39</item> <!-- Everything Gets Better -->
+        <item>04:30</item> <!-- Hymn No.36 (Praise To The Lord The Almighty) -->
+        <item>05:31</item> <!-- David and I -->
+    </string-array>
+    
+    <string-array name="the_joyous_mysteries_song_title_array">
+        <item>The Annunciation</item>
+        <item>O Little Town Of Bethlehem</item>
+        <item>The Visitation</item>
+        <item>The First Noel</item>
+        <item>The Nativity</item>
+        <item>It Came Upon A Midnight Clear</item>
+        <item>The Presentation</item>
+        <item>Auld Lang Syne</item>
+    </string-array>
+
+    <string-array name="the_joyous_mysteries_song_length_array">
+        <item>03:48</item> <!-- The Annunciation -->
+        <item>03:07</item> <!-- O Little Town Of Bethlehem -->
+        <item>04:30</item> <!-- The Visitation -->
+        <item>02:17</item> <!-- The First Noel -->
+        <item>05:02</item> <!-- The Nativity -->
+        <item>02:38</item> <!-- It Came Upon A Midnight Clear -->
+        <item>04:57</item> <!-- The Presentation -->
+        <item>01:18</item> <!-- Auld Lang Syne-->
+    </string-array>
+
+    <string-array name="dark_fields_song_title_array">
+        <item>Melchizadek</item>
+        <item>First Kiss</item>
+        <item>David and I</item>
+        <item>Dark Fields</item>
+    </string-array>
+
+    <string-array name="dark_fields_song_length_array">
+        <item>02:55</item> <!-- Melchizadek -->
+        <item>03:29</item> <!-- First Kiss -->
+        <item>05:31</item> <!-- David and I -->
+        <item>04:54</item> <!-- Dark Fields -->
+    </string-array>
+
+    <string-array name="cathedrals_song_title_array">
+        <item>Empty</item>
+        <item>Everything Gets Better</item>
+        <item>There Is A Balm In Gilead</item>
+        <item>Hymn No.36 (Praise To The Lord The Almighty)</item>
+        <item>Everything Gets Better (Acoustic)</item>
+    </string-array>
+
+    <string-array name="cathedrals_song_length_array">
+        <item>04:12</item> <!-- Empty -->
+        <item>03:39</item> <!-- Everything Gets Better -->
+        <item>03:17</item> <!-- There Is A Balm In Gilead -->
+        <item>04:30</item> <!-- Hymn No.36 (Praise To The Lord The Almighty) -->
+        <item>03:39</item> <!-- Everything Gets Better (Acoustic) -->
+    </string-array>
+
+    <string-array name="haystacks_song_title_array">
+        <item>Run Run</item>
+        <item>Good Days</item>
+        <item>Shimmer No Waves</item>
+        <item>Everything's Not Broken</item>
+        <item>Shelter</item>
+        <item>Let The Rain</item>
+        <item>Sloth</item>
+        <item>Trinity</item>
+        <item>Jaw/Gonna Cut You Down</item>
+        <item>Nut Scared Here</item>
+        <item>Ghosts For Tinder</item>
+        <item>Everything Is New</item>
+        <item>The Cupboard's Full</item>
+        <item>Elixirs</item>
+        <item>Portland</item>
+        <item>The End</item>
+    </string-array>
+
+    <string-array name="haystacks_song_length_array">
+        <item>03:12</item> <!-- Run Run -->
+        <item>03:17</item> <!-- Good Days -->
+        <item>02:52</item> <!-- Shimmer No Waves -->
+        <item>03:35</item> <!-- Everything's Not Broken -->
+        <item>03:11</item> <!-- Shelter -->
+        <item>04:24</item> <!-- Let The Rain -->
+        <item>02:55</item> <!-- Sloth -->
+        <item>03:49</item> <!-- Trinity -->
+        <item>03:44</item> <!-- Jaw/Gonna Cut You Down -->
+        <item>05:57</item> <!-- Nut Scared Here -->
+        <item>03:13</item> <!-- Ghosts For Tinder -->
+        <item>05:08</item> <!-- Everything Is New -->
+        <item>04:10</item> <!-- The Cupboard's Full -->
+        <item>03:40</item> <!-- Elixirs -->
+        <item>04:10</item> <!-- Portland -->
+        <item>02:14</item> <!-- The End -->
+    </string-array>
+
+    <string-array name="becoming_song_title_array">
+        <item>Boxing Shadows</item>
+        <item>Elixirs</item>
+        <item>Ghosts For Tinder</item>
+        <item>Please Cover Me</item>
+        <item>Big Sister On The Toy Phone</item>
+        <item>Sunrise Sunrise Sunrise</item>
+        <item>Dust To Dust</item>
+        <item>Eventually</item>
+        <item>You Seem Yourself</item>
+        <item>I Have Waited For You</item>
+        <item>Will You Stay?</item>
+    </string-array>
+
+    <string-array name="becoming_song_length_array">
+        <item>03:17</item> <!-- Boxing Shadows -->
+        <item>03:40</item> <!-- Elixirs -->
+        <item>03:13</item> <!-- Ghosts For Tinder -->
+        <item>02:23</item> <!-- Please Cover Me -->
+        <item>00:55</item> <!-- Big Sister On The Toy Phone -->
+        <item>03:35</item> <!-- Sunrise Sunrise Sunrise -->
+        <item>00:59</item> <!-- Dust To Dust -->
+        <item>3:01</item> <!-- Eventually -->
+        <item>03:14</item> <!-- You Seem Yourself -->
+        <item>04:19</item> <!-- I Have Waited For You -->
+        <item>02:04</item> <!-- Will You Stay? -->
+    </string-array>
+
+    <string-array name="almanac_song_title_array">
+        <item>Shimmer No Waves</item>
+        <item>Written In Our Clothes</item>
+        <item>Paint Your Tigers Gold</item>
+        <item>Ships Passing In The Night</item>
+        <item>We Are Proud</item>
+        <item>Run Run</item>
+        <item>Like The Morning</item>
+        <item>Rally Those Hopes</item>
+        <item>We'll Be Strong</item>
+        <item>Stop Glorifying Busy</item>
+        <item>All The Lights</item>
+        <item>Breaking Love</item>
+    </string-array>
+
+    <string-array name="almanac_song_length_array">
+        <item>02:52</item> <!-- Shimmer No Waves -->
+        <item>03:20</item> <!-- Written In Our Clothes -->
+        <item>03:31</item> <!-- Paint Your Tigers Gold -->
+        <item>03:55</item> <!-- Ships Passing In The Night -->
+        <item>03:01</item> <!-- We Are Proud -->
+        <item>03:12</item> <!-- Run Run -->
+        <item>03:31</item> <!-- Like The Morning -->
+        <item>03:49</item> <!-- Rally Those Hopes -->
+        <item>02:40</item> <!-- We'll Be Strong -->
+        <item>04:11</item> <!-- Stop Glorifying Busy -->
+        <item>03:03</item> <!-- All The Lights -->
+        <item>03:23</item> <!-- Breaking Love -->
+    </string-array>
 
 </resources>

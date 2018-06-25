@@ -1,7 +1,10 @@
 package com.example.android.giantsandpilgrims;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -23,7 +26,7 @@ public class AlbumArrayAdapter extends ArrayAdapter {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        AlbumInfo currentAlbum = (AlbumInfo) getItem(position);
+        final AlbumInfo currentAlbum = (AlbumInfo) getItem(position);
         View listItemView = convertView;
 
         if (listItemView == null) {
@@ -34,22 +37,25 @@ public class AlbumArrayAdapter extends ArrayAdapter {
         ImageView albumCoverArt = listItemView.findViewById(R.id.album_cover_image);
         albumCoverArt.setImageResource(currentAlbum.getCoverDrawableID());
 
-        TextView albumName = listItemView.findViewById(R.id.album_name);
+        final TextView albumName = listItemView.findViewById(R.id.album_name);
         albumName.setText(currentAlbum.getAlbumName());
 
         TextView albumYear = listItemView.findViewById(R.id.album_year);
         albumYear.setText(String.valueOf(currentAlbum.getAlbumYear()));
+
+        final String mAlbumName = currentAlbum.getAlbumTextIdentifier();
 
         listItemView.setTag(position);
         listItemView.setOnClickListener((new View.OnClickListener() {
             // The code in this method will be executed when the family category is clicked on.
             @Override
             public void onClick(View view) {
-                Intent songListIntent = new Intent(getContext(), SongList.class);
-                getContext().startActivity(songListIntent);
+                Context context = getContext();
+                Intent songListIntent = new Intent(context, SongList.class);
+                songListIntent.putExtra("albumID" , mAlbumName);
+                context.startActivity(songListIntent);
             }
         }));
-
         return listItemView;
     }
 }

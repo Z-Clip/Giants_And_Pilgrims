@@ -35,11 +35,11 @@ public class MainActivity extends AppCompatActivity {
 
         albumCoverResourceIDs = new int[albumCoverResourceNames.length];
         for (int i = 0 ; i < albumCoverResourceNames.length ; i++) {
-            albumCoverResourceIDs[i] = getResources().getIdentifier("com.example.android.giantsandpilgrims:drawable/" + albumCoverResourceNames[i] , null, null);
+            albumCoverResourceIDs[i] = getResources().getIdentifier("com.example.android.giantsandpilgrims:drawable/" + albumCoverResourceNames[i] + "_cover", null, null);
         }
 
         for (int i = 0 ; i < albumTitles.length ; i++) {
-            albumInfo.add(i , new AlbumInfo(albumCoverResourceIDs[i] , albumTitles[i] , albumYears[i]));
+            albumInfo.add(i , new AlbumInfo(albumCoverResourceIDs[i] , albumTitles[i] , albumYears[i] , albumCoverResourceNames[i]));
         }
     }
 }

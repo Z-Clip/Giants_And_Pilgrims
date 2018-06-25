@@ -2,10 +2,10 @@
 <resources>
 
     <string-array name="album_cover_names">
-        <item>bellwether_cover</item>
-        <item>the_joyous_mysteries_cover</item>
-        <item>becoming_cover</item>
-        <item>almanac_cover</item>
+        <item>bellwether</item>
+        <item>the_joyous_mysteries</item>
+        <item>becoming</item>
+        <item>almanac</item>
     </string-array>
 
     <string-array name="album_titles">

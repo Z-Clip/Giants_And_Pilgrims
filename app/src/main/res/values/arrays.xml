@@ -4,6 +4,9 @@
     <string-array name="album_cover_names">
         <item>bellwether</item>
         <item>the_joyous_mysteries</item>
+        <item>dark_fields</item>
+        <item>cathedrals</item>
+        <item>haystacks</item>
         <item>becoming</item>
         <item>almanac</item>
     </string-array>
@@ -11,6 +14,9 @@
     <string-array name="album_titles">
         <item>Bellwether</item>
         <item>The Joyous Mysteries</item>
+        <item>Dark Fields EP</item>
+        <item>Cathedrals EP</item>
+        <item>Haystacks: A Collection of Favorite Songs</item>
         <item>Becoming</item>
         <item>Almanac</item>
     </string-array>
@@ -18,6 +24,9 @@
     <integer-array name="album_year">
         <item>2018</item>  <!-- Bellwether -->
         <item>2017</item>  <!-- The Joyous Mysteries -->
+        <item>2017</item>  <!-- Dark Fields -->
+        <item>2017</item>  <!-- Cathedrals -->
+        <item>2016</item>  <!-- Haystacks -->
         <item>2015</item>  <!-- Becoming -->
         <item>2014</item>  <!-- Almanac -->
     </integer-array>

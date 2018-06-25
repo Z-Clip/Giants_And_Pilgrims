@@ -4,10 +4,13 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class SongList extends AppCompatActivity {
     String albumTextID;
+    String albumName;
     ImageView backgroundImage;
+    TextView header;
 
 
     @Override
@@ -17,18 +20,20 @@ public class SongList extends AppCompatActivity {
 
         Bundle bundle = getIntent().getExtras();
         albumTextID = bundle.getString("albumID");
+        albumName = bundle.getString("albumName");
 
         getViewObjectIDs();
         setViews();
     }
 
     public void getViewObjectIDs() {
-        backgroundImage=findViewById(R.id.background_image);
+        backgroundImage = findViewById(R.id.background_image);
+        header = findViewById(R.id.header_view);
     }
 
     public void setViews() {
-        Resources resource = getResources();
-        backgroundImage.setImageResource(resource.getIdentifier("com.example.android.giantsandpilgrims.drawable/" + albumTextID + "_full", null, null));
+        backgroundImage.setImageResource(getResources().getIdentifier("com.example.android.giantsandpilgrims:drawable/" + albumTextID + "_full", null, null));
+        header.setText(albumName);
     }
 
 }

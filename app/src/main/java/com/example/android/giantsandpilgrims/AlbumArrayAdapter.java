@@ -38,12 +38,13 @@ public class AlbumArrayAdapter extends ArrayAdapter {
         albumCoverArt.setImageResource(currentAlbum.getCoverDrawableID());
 
         final TextView albumName = listItemView.findViewById(R.id.album_name);
-        albumName.setText(currentAlbum.getAlbumName());
+        final String mAlbumName = currentAlbum.getAlbumName();
+        albumName.setText(mAlbumName);
 
         TextView albumYear = listItemView.findViewById(R.id.album_year);
         albumYear.setText(String.valueOf(currentAlbum.getAlbumYear()));
 
-        final String mAlbumName = currentAlbum.getAlbumTextIdentifier();
+        final String mAlbumTextID = currentAlbum.getAlbumTextIdentifier();
 
         listItemView.setTag(position);
         listItemView.setOnClickListener((new View.OnClickListener() {
@@ -52,7 +53,8 @@ public class AlbumArrayAdapter extends ArrayAdapter {
             public void onClick(View view) {
                 Context context = getContext();
                 Intent songListIntent = new Intent(context, SongList.class);
-                songListIntent.putExtra("albumID" , mAlbumName);
+                songListIntent.putExtra("albumID" , mAlbumTextID);
+                songListIntent.putExtra("albumName" , mAlbumName);
                 context.startActivity(songListIntent);
             }
         }));

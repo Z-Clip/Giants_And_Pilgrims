@@ -9,12 +9,11 @@
     <ImageView
         android:id="@+id/background_image"
         style="@style/background_image"
-        tools:src="@drawable/cathedrals_cover_art"/>
+        tools:src="@drawable/bellwether_full"/>
 
     <TextView
-        android:id="@+id/test"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/header_view"
+        style="@style/header_text_view"
         android:text="Success"/>
 
 </RelativeLayout>

@@ -5,6 +5,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
 
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/background_image"
+        style="@style/background_image"
+        tools:src="@drawable/cathedrals_cover_art"/>
+
     <TextView
         android:id="@+id/test"
         android:layout_width="match_parent"

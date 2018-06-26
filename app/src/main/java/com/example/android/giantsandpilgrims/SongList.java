@@ -7,7 +7,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class SongList extends AppCompatActivity {
     String albumTextID;
@@ -15,7 +18,9 @@ public class SongList extends AppCompatActivity {
     ImageView backgroundImage;
     TextView header;
     TextView backView;
-
+    String[] songNameArray;
+    String[] songLengthArray;
+    public ArrayList<SongInfo> songInfo = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +33,16 @@ public class SongList extends AppCompatActivity {
 
         getViewObjectIDs();
         setViews();
+        enableBackButtonListener();
+        createArrays();
+        populateArrayList();
 
+        SongArrayAdapter songAdapter = new SongArrayAdapter(this , songInfo);
+        ListView listView = findViewById(R.id.song_list);
+        listView.setAdapter(songAdapter);
+    }
+
+    public void enableBackButtonListener() {
         backView.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,6 +61,18 @@ public class SongList extends AppCompatActivity {
     public void setViews() {
         backgroundImage.setImageResource(getResources().getIdentifier("com.example.android.giantsandpilgrims:drawable/" + albumTextID + "_full", null, null));
         header.setText(albumName);
+    }
+
+    public void createArrays() {
+        Resources resource = getResources();
+        songNameArray = resource.getStringArray(resource.getIdentifier(albumTextID + "_song_title_array", "array", getPackageName()));
+        songLengthArray = resource.getStringArray(resource.getIdentifier(albumTextID + "_song_length_array", "array", getPackageName()));
+    }
+
+    public void populateArrayList(){
+        for (int i = 0 ; i < songNameArray.length ; i++) {
+            songInfo.add(i , new SongInfo(songNameArray[i] , songLengthArray[i]));
+        }
     }
 
 }

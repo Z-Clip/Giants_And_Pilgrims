@@ -17,6 +17,17 @@
         style="@style/header_text_view"
         tools:text="Success"/>
 
+    <!-- Song List -->
+    <ListView
+        android:id="@+id/song_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:layout_below="@id/header_view"
+        android:layout_above="@id/back_button"
+        android:orientation="vertical">
+    </ListView>
+
     <!-- Back -->
     <TextView
         android:id="@+id/back_button"

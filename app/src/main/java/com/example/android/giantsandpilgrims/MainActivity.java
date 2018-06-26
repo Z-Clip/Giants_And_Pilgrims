@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.initial_layout);
 
         createArrays();
+        populateArrayList();
 
         AlbumArrayAdapter albumAdapter = new AlbumArrayAdapter(this , albumInfo);
         ListView listView = (ListView) findViewById(R.id.album_list);
@@ -31,13 +32,15 @@ public class MainActivity extends AppCompatActivity {
         Resources resource = getResources();
         albumCoverResourceNames = resource.getStringArray(resource.getIdentifier("album_cover_names", "array", getPackageName()));
         albumTitles = resource.getStringArray(resource.getIdentifier("album_titles", "array", getPackageName()));
-        albumYears = resource.getIntArray(resource.getIdentifier("album_year" , "array" , getPackageName()));
+        albumYears = resource.getIntArray(resource.getIdentifier("album_year", "array", getPackageName()));
 
         albumCoverResourceIDs = new int[albumCoverResourceNames.length];
-        for (int i = 0 ; i < albumCoverResourceNames.length ; i++) {
+        for (int i = 0; i < albumCoverResourceNames.length; i++) {
             albumCoverResourceIDs[i] = getResources().getIdentifier("com.example.android.giantsandpilgrims:drawable/" + albumCoverResourceNames[i] + "_cover", null, null);
         }
+    }
 
+    public void populateArrayList(){
         for (int i = 0 ; i < albumTitles.length ; i++) {
             albumInfo.add(i , new AlbumInfo(albumCoverResourceIDs[i] , albumTitles[i] , albumYears[i] , albumCoverResourceNames[i]));
         }

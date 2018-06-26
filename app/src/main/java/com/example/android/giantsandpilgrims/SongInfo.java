@@ -2,8 +2,8 @@ package com.example.android.giantsandpilgrims;
 
 public class SongInfo {
 
-    String mSongName;
-    String mSongLength;
+    private String mSongName;
+    private String mSongLength;
 
     //Constructor
     public SongInfo(String songName , String songLength) {

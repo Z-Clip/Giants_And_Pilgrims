@@ -28,9 +28,11 @@ public class SongArrayAdapter extends ArrayAdapter {
                     R.layout.song_info, parent, false);
         }
 
+        //Set the song name view
         TextView songNameView = listItemView.findViewById(R.id.song_name);
         songNameView.setText(String.valueOf(currentSong.getSongName()));
 
+        //Set the song length view
         TextView songLengthView = listItemView.findViewById(R.id.song_length);
         songLengthView.setText(String.valueOf(currentSong.getSongLength()));
 

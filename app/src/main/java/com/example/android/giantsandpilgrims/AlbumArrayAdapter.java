@@ -34,18 +34,23 @@ public class AlbumArrayAdapter extends ArrayAdapter {
                     R.layout.album_info, parent, false);
         }
 
+        //Populate the album cover thumbnail
         ImageView albumCoverArt = listItemView.findViewById(R.id.album_cover_image);
         albumCoverArt.setImageResource(currentAlbum.getCoverDrawableID());
 
+        //Populate the album name textview
         final TextView albumName = listItemView.findViewById(R.id.album_name);
         final String mAlbumName = currentAlbum.getAlbumName();
         albumName.setText(mAlbumName);
 
+        //Populate the album year textview
         TextView albumYear = listItemView.findViewById(R.id.album_year);
         albumYear.setText(String.valueOf(currentAlbum.getAlbumYear()));
 
+        //Define the text ID to pass in the on-click listener
         final String mAlbumTextID = currentAlbum.getAlbumTextIdentifier();
 
+        //Create on-click listener
         listItemView.setTag(position);
         listItemView.setOnClickListener((new View.OnClickListener() {
             // The code in this method will be executed when the family category is clicked on.

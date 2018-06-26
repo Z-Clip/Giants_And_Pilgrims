@@ -23,11 +23,13 @@ public class MainActivity extends AppCompatActivity {
         createArrays();
         populateArrayList();
 
+        //Create the array adapter
         AlbumArrayAdapter albumAdapter = new AlbumArrayAdapter(this , albumInfo);
-        ListView listView = (ListView) findViewById(R.id.album_list);
+        ListView listView = findViewById(R.id.album_list);
         listView.setAdapter(albumAdapter);
     }
 
+    //Build the arrays necessary to populate the array list
     public void createArrays() {
         Resources resource = getResources();
         albumCoverResourceNames = resource.getStringArray(resource.getIdentifier("album_cover_names", "array", getPackageName()));
@@ -40,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //Populate the array list
     public void populateArrayList(){
         for (int i = 0 ; i < albumTitles.length ; i++) {
             albumInfo.add(i , new AlbumInfo(albumCoverResourceIDs[i] , albumTitles[i] , albumYears[i] , albumCoverResourceNames[i]));
